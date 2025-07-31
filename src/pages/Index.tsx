@@ -50,6 +50,17 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-12">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-white shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/files/6f601a6d-d87b-4903-9828-8cdc4e07623d.jpg" 
+                alt="Никита Сергеевич"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-black mb-8 tracking-wide">НИКИТА СЕРГЕЕВИЧ</h3>
+          </div>
+          
           <h1 className="text-6xl md:text-8xl font-bold text-black mb-8 tracking-wider uppercase">
             VIDEO<br />
             <span className="text-gray-600">EDITING</span>
