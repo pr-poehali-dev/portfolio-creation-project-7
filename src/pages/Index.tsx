@@ -39,10 +39,9 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-semibold text-black">Монтаж</div>
+          <div className="text-xl font-semibold text-black">Видеомонтаж</div>
           <div className="flex gap-8">
             <a href="#portfolio" className="text-gray-600 hover:text-black transition-colors">Портфолио</a>
-            <a href="#services" className="text-gray-600 hover:text-black transition-colors">Услуги</a>
             <a href="#contact" className="text-gray-600 hover:text-black transition-colors">Контакты</a>
           </div>
         </div>
@@ -52,12 +51,11 @@ const Index = () => {
       <section className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-light text-black mb-8 tracking-tight">
-            Качественный<br />
+            Видео<br />
             <span className="font-semibold">монтаж</span>
           </h1>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Создаем современные пространства с вниманием к деталям. 
-            Профессиональный подход к каждому проекту.
+            Улучшаю ваши ролики до идеального состояния
           </p>
           <Button 
             size="lg" 
@@ -69,47 +67,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section id="services" className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-light text-black mb-12 text-center">Услуги</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service) => (
-              <Card key={service.title} className="border-0 shadow-none bg-white hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
-                    <Icon name={service.icon} size={24} className="text-white" />
-                  </div>
-                  <h3 className="text-lg font-medium text-black mb-2">{service.title}</h3>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Portfolio */}
       <section id="portfolio" className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-light text-black mb-12 text-center">Портфолио</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div key={project.id} className="group cursor-pointer">
-                <div className="aspect-[4/3] overflow-hidden mb-4 bg-gray-100">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <p className="text-sm text-gray-500 uppercase tracking-wide">{project.category}</p>
-                  <h3 className="text-xl font-medium text-black">{project.title}</h3>
-                  <p className="text-gray-600">{project.description}</p>
-                </div>
-              </div>
-            ))}
+          <div className="aspect-video w-full">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/Q9FZqDbam7Y"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="rounded-lg shadow-lg"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -117,26 +91,16 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 bg-black text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-light mb-8">Готовы начать?</h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Обсудим ваш проект и создадим пространство мечты
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <h2 className="text-3xl font-light mb-8">Контакты</h2>
+          <div className="flex justify-center">
             <Button 
               size="lg" 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg"
+              onClick={() => window.open('https://t.me/linbtw', '_blank')}
             >
-              <Icon name="Phone" size={20} className="mr-2" />
-              +7 (999) 123-45-67
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg"
-            >
-              <Icon name="Mail" size={20} className="mr-2" />
-              info@montazh.ru
+              <Icon name="MessageCircle" size={20} className="mr-2" />
+              @linbtw
             </Button>
           </div>
         </div>
@@ -145,7 +109,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-600">© 2024 Монтаж. Все права защищены.</p>
+          <p className="text-gray-600">© 2024 Видеомонтаж. Все права защищены.</p>
         </div>
       </footer>
     </div>
