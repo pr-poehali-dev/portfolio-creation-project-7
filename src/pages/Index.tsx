@@ -35,14 +35,14 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+      <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-black uppercase tracking-wide">EDITOR</div>
+          <div className="text-2xl font-bold text-white uppercase tracking-wide">EDITOR</div>
           <div className="flex gap-8">
-            <a href="#portfolio" className="text-gray-600 hover:text-black transition-colors">Портфолио</a>
-            <a href="#contact" className="text-gray-600 hover:text-black transition-colors">Контакты</a>
+            <a href="#portfolio" className="text-gray-400 hover:text-white transition-colors">Портфолио</a>
+            <a href="#contact" className="text-gray-400 hover:text-white transition-colors">Контакты</a>
           </div>
         </div>
       </nav>
@@ -58,19 +58,19 @@ const Index = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-2xl font-bold text-black mb-8 tracking-wide">НИКИТА СЕРГЕЕВИЧ</h3>
+            <h3 className="text-2xl font-bold text-white mb-8 tracking-wide">НИКИТА СЕРГЕЕВИЧ</h3>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold text-black mb-8 tracking-wider uppercase">
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-wider uppercase">
             VIDEO<br />
-            <span className="text-gray-600">EDITING</span>
+            <span className="text-gray-400">EDITING</span>
           </h1>
-          <p className="text-2xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
             УЛУЧШАЮ ВАШИ РОЛИКИ ДО ИДЕАЛЬНОГО СОСТОЯНИЯ
           </p>
           <Button 
             size="lg" 
-            className="bg-black text-white hover:bg-gray-800 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300"
+            className="bg-white text-black hover:bg-gray-200 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300"
             onClick={() => window.open('https://t.me/linbtw', '_blank')}
           >
             СВЯЗАТЬСЯ
@@ -82,9 +82,9 @@ const Index = () => {
 
 
       {/* Portfolio */}
-      <section id="portfolio" className="py-16 px-6 bg-gray-50">
+      <section id="portfolio" className="py-16 px-6 bg-gray-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-black mb-16">ПОРТФОЛИО</h2>
+          <h2 className="text-4xl font-bold text-center text-white mb-16">ПОРТФОЛИО</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="group">
               <div className="aspect-video w-full mb-4">
@@ -99,9 +99,9 @@ const Index = () => {
                   className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
                 ></iframe>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-black mb-2">ПРОЕКТ #1</h3>
-                <p className="text-gray-600">Динамичный монтаж с эффектами и цветокоррекцией</p>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-white mb-2">ПРОЕКТ #1</h3>
+                <p className="text-gray-300">Динамичный монтаж с эффектами и цветокоррекцией</p>
               </div>
             </div>
             
@@ -118,9 +118,9 @@ const Index = () => {
                   className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
                 ></iframe>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-black mb-2">ПРОЕКТ #2</h3>
-                <p className="text-gray-600">Креативный подход к визуальному сторителлингу</p>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-white mb-2">ПРОЕКТ #2</h3>
+                <p className="text-gray-300">Креативный подход к визуальному сторителлингу</p>
               </div>
             </div>
           </div>
@@ -145,9 +145,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-gray-50">
+      <footer className="py-8 px-6 bg-gray-900">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-600">© 2024 Видеомонтаж. Все права защищены.</p>
+          <p className="text-gray-400">© 2024 Видеомонтаж. Все права защищены.</p>
         </div>
       </footer>
     </div>
