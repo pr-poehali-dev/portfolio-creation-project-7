@@ -39,7 +39,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-semibold text-black">Видеомонтаж</div>
+          <div className="text-2xl font-bold text-black uppercase tracking-wide">EDITOR</div>
           <div className="flex gap-8">
             <a href="#portfolio" className="text-gray-600 hover:text-black transition-colors">Портфолио</a>
             <a href="#contact" className="text-gray-600 hover:text-black transition-colors">Контакты</a>
@@ -50,19 +50,20 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-light text-black mb-8 tracking-tight">
-            Видео<br />
-            <span className="font-semibold">монтаж</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-black mb-8 tracking-wider uppercase">
+            VIDEO<br />
+            <span className="text-gray-600">EDITING</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Улучшаю ваши ролики до идеального состояния
+          <p className="text-2xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+            УЛУЧШАЮ ВАШИ РОЛИКИ ДО ИДЕАЛЬНОГО СОСТОЯНИЯ
           </p>
           <Button 
             size="lg" 
-            className="bg-black text-white hover:bg-gray-800 px-8 py-6 text-lg font-medium"
+            className="bg-black text-white hover:bg-gray-800 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300"
+            onClick={() => window.open('https://t.me/linbtw', '_blank')}
           >
-            Обсудить проект
-            <Icon name="ArrowRight" size={20} className="ml-2" />
+            СВЯЗАТЬСЯ
+            <Icon name="ArrowRight" size={24} className="ml-3" />
           </Button>
         </div>
       </section>
@@ -70,37 +71,63 @@ const Index = () => {
 
 
       {/* Portfolio */}
-      <section id="portfolio" className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-light text-black mb-12 text-center">Портфолио</h2>
-          <div className="aspect-video w-full">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/Q9FZqDbam7Y"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="rounded-lg shadow-lg"
-            ></iframe>
+      <section id="portfolio" className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-black mb-16">ПОРТФОЛИО</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="group">
+              <div className="aspect-video w-full mb-4">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/Q9FZqDbam7Y"
+                  title="Video Edit 1"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
+                ></iframe>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-black mb-2">ПРОЕКТ #1</h3>
+                <p className="text-gray-600">Динамичный монтаж с эффектами и цветокоррекцией</p>
+              </div>
+            </div>
+            
+            <div className="group">
+              <div className="aspect-video w-full mb-4">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/UzhV7_mOCho"
+                  title="Video Edit 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
+                ></iframe>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-black mb-2">ПРОЕКТ #2</h3>
+                <p className="text-gray-600">Креативный подход к визуальному сторителлингу</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-6 bg-black text-white">
+      <section id="contact" className="py-20 px-6 bg-black text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-light mb-8">Контакты</h2>
+          <h2 className="text-4xl font-bold mb-12 uppercase tracking-wider">КОНТАКТЫ</h2>
           <div className="flex justify-center">
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg"
+              className="bg-white text-black hover:bg-gray-200 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300"
               onClick={() => window.open('https://t.me/linbtw', '_blank')}
             >
-              <Icon name="MessageCircle" size={20} className="mr-2" />
-              @linbtw
+              <Icon name="MessageCircle" size={24} className="mr-3" />
+              @LINBTW
             </Button>
           </div>
         </div>
