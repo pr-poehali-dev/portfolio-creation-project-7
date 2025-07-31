@@ -35,9 +35,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-cover bg-center bg-fixed" style={{backgroundImage: "url('/img/b27f680e-a3d7-484c-b8ef-cda49f36650f.jpg')"}}>
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+      <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-purple-500/30">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-white uppercase tracking-wide">EDITOR</div>
           <div className="flex gap-8">
@@ -48,7 +48,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6">
+      <section className="pt-24 pb-16 px-6 bg-black/40">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-12">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-white shadow-2xl">
@@ -70,7 +70,7 @@ const Index = () => {
           </p>
           <Button 
             size="lg" 
-            className="bg-white text-black hover:bg-gray-200 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300"
+            className="bg-purple-600 text-white hover:bg-purple-500 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300 shadow-2xl"
             onClick={() => window.open('https://t.me/linbtw', '_blank')}
           >
             СВЯЗАТЬСЯ
@@ -82,7 +82,7 @@ const Index = () => {
 
 
       {/* Portfolio */}
-      <section id="portfolio" className="py-16 px-6 bg-gray-900">
+      <section id="portfolio" className="py-16 px-6 bg-black/60 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-16">ПОРТФОЛИО</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -99,7 +99,7 @@ const Index = () => {
                   className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
                 ></iframe>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <div className="bg-black/80 backdrop-blur-md p-6 rounded-lg shadow-2xl border border-purple-500/30">
                 <h3 className="text-xl font-bold text-white mb-2">ПРОЕКТ #1</h3>
                 <p className="text-gray-300">Динамичный монтаж с эффектами и цветокоррекцией</p>
               </div>
@@ -118,7 +118,7 @@ const Index = () => {
                   className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
                 ></iframe>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <div className="bg-black/80 backdrop-blur-md p-6 rounded-lg shadow-2xl border border-purple-500/30">
                 <h3 className="text-xl font-bold text-white mb-2">ПРОЕКТ #2</h3>
                 <p className="text-gray-300">Креативный подход к визуальному сторителлингу</p>
               </div>
@@ -128,13 +128,13 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-black text-white">
+      <section id="contact" className="py-20 px-6 bg-black/70 backdrop-blur-md text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12 uppercase tracking-wider">КОНТАКТЫ</h2>
           <div className="flex justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-black hover:bg-gray-200 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300"
+              className="bg-purple-600 text-white hover:bg-purple-500 px-12 py-8 text-xl font-bold uppercase tracking-wide transition-all duration-300 shadow-2xl border border-purple-400"
               onClick={() => window.open('https://t.me/linbtw', '_blank')}
             >
               <Icon name="MessageCircle" size={24} className="mr-3" />
@@ -145,7 +145,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-gray-900">
+      <footer className="py-8 px-6 bg-black/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400">© 2024 Видеомонтаж. Все права защищены.</p>
         </div>
